@@ -3,16 +3,40 @@ import Link from "next/link";
 
 export default function Navbar() {
     return (
-     <nav className="flex w-max mx-auto mt-2 bg-sky-900 py-3 text-white px-3 text-center" >
-
-    
-        <Link href="/" className="pr-3 "> Home</Link>
-        <Link href="/about" className="pr-3 ">About </Link>
-        <Link href="/services" className="pr-3 "> Services</Link>
-        <Link href="/contact" className="pr-3 "> Contact</Link>
-        
-       
-     </nav>
+     <div className=" bg-primary color-white">
+       <div className="flex justify-between container py-5">
+            <div>
+                    <Link
+                        href="/"
+                        className=""
+                    >
+                        LOGO
+                    </Link> 
+            </div>
+            <div>
+                <ul className="flex">
+                    <li>
+                        <Link href="/">Home</Link>
+                    </li>
+                    <li>
+                         <Link href="/about">About Us</Link>
+                    </li>
+                    <li>
+                         <Link href="/services">Services</Link>
+                    </li>
+                    <li>
+                        <Link href="/pricing">Pricing</Link>
+                    </li>
+                    <li>
+                         <Link href="/portfolio">Porfolio</Link>
+                    </li>
+                    <li>
+                         <Link href="/contact">Contact</Link>
+                    </li>
+                </ul>
+            </div>
+       </div>
+     </div>
       
     )
   }
