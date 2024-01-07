@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-color:#31A8FF;
+  --secondary-color:#001E36;
+  --primary-white:#fff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,4 +16,22 @@
   }
 }
 
-
+.container{
+    max-width:1440px !important;
+    margin-inline:auto;
+}
+.bg-secondary{
+  background-color: var(--secondary-color);
+}
+.bg-primary{
+  background-color: var(--primary-color);
+}
+.color-white{
+  color:var(--primary-white)
+}
+.color-primary{
+  color: var(--primary-color);
+}
+.color-secondary{
+  color: var(--secondary-color);
+}
