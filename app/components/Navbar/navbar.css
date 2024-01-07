@@ -1,6 +1,6 @@
 .navbar ul li a span svg{
-    width:25px;
-    height:25px;
+    width:20px;
+    height:20px;
 }
 .activeNav{
     position: absolute;
