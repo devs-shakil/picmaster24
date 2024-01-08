@@ -8,49 +8,49 @@ import './navbar.css'
 export default function Navbar() {
     return (
      <div className="navbar bg-secondary color-primary  ">
-       <div className="flex justify-between container py-7 uppercase w-full flex-col  md:flex-row px-5 ">
+       <div className="flex justify-between container  uppercase w-full flex-col  md:flex-row px-5 ">
             <div>
                     <Link
                         href="/"
-                        className=""
+                        className="py-7 inline-flex"
                     >
                         LOGO
                     </Link> 
             </div>
             <div>
-                <ul className="flex gap-4 text-base font-bold hidden md:flex">
+                <ul className="flex  text-base font-bold hidden md:flex bg-secondary">
                     <li>
-                        <Link href="/">Home</Link>
+                        <Link  className="py-7  px-2  inline-flex" href="/">Home</Link>
                     </li>
                     <li>
-                         <Link href="/about">About Us</Link>
+                         <Link className="py-7  px-2  inline-flex"     href="/about">About Us</Link>
                     </li>
                     <li>
-                         <Link href="/services">Services</Link>
+                         <Link className="py-7 px-2  inline-flex" href="/services">Services</Link>
                     </li>
                     <li>
-                        <Link href="/pricing">Pricing</Link>
+                        <Link className="py-7  px-2 inline-flex" href="/pricing">Pricing</Link>
                     </li>
                     <li>
-                         <Link href="/portfolio">Porfolio</Link>
+                         <Link className="py-7 px-2  inline-flex" href="/portfolio">Porfolio</Link>
                     </li>
                     <li>
-                         <Link href="/contact">Contact</Link>
+                         <Link className="py-7 px-2  inline-flex" href="/contact">Contact</Link>
                     </li>
                 </ul>
             </div>
        </div>
-       <ul className="flex  md:hidden fixed bottom-0 right-0 left-0 bg-secondary color-primary  text-xs px-5 items-center justify-between">
-            <li className="relative">
+       <ul className="flex  md:hidden fixed bottom-0 right-0 left-0 bg-secondary color-primary  text-[10px] px-5 items-center justify-between">
+            <li className="">
                 <Link
                     href="/"
                     className="flex flex-col items-center justify-center gap-1  py-2 gap-1"
                  >
-                    <span className="activeNav">< FaHome /></span>
+                    <span className="">< FaHome /></span>
                     <span>Home</span>
                 </Link>
             </li>
-            <li className="relative">
+            <li className="">
                 <Link
                      href="/about"
                      className="flex flex-col items-center justify-center px-2  py-2 gap-1"
@@ -59,7 +59,7 @@ export default function Navbar() {
                     <span>About Us</span>
                 </Link>
             </li>
-            <li className="relative">
+            <li className="">
                 <Link
                      href="/services"
                      className="flex flex-col items-center justify-center px-2  py-2 gap-1"
@@ -68,7 +68,7 @@ export default function Navbar() {
                     <span>Services</span>
                 </Link>
             </li>
-            <li className="relative">
+            <li className="">
                 <Link
                      href="/pricing"
                      className="flex flex-col items-center justify-center px-2  py-2 gap-1"
@@ -77,7 +77,7 @@ export default function Navbar() {
                     <span>Pricing</span>
                 </Link>
             </li>
-            <li className="relative">
+            <li className="">
                 <Link
                      href="/portfolio"
                      className="flex flex-col items-center justify-center gpx-2  py-2 gap-1"
@@ -86,7 +86,7 @@ export default function Navbar() {
                     <span>Portfolio</span>
                 </Link>
             </li>
-            <li className="relative">
+            <li className="">
                 <Link 
                     href="/contact"
                     className="flex flex-col items-center justify-center px-2   py-2 gap-1"

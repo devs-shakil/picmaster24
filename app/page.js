@@ -1,17 +1,18 @@
-import Image from "next/image";
-import Navbar from "./components/Navbar/Navbar";
+import ImageWithText from "./components/ImageWithText/ImageWIthText";
+import image from './../public/images/header-right.png'
 
 
 export default function Home() {
   return (
   <main>
-     <Image
-    src={'/images/logo.jpg'}
-    className="mx-auto mt-6"
-    width={400}
-    height={200}
-   />
-   <h2 className="text-[45px] font-bold text-center pt-3  uppercase">Comming Soon <span className="text-[#4FEBFE]"></span></h2>
+     <ImageWithText
+      title={"Perfect Clipping Path & Photoshop Services"}
+      subtitle={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus, risus sit amet auctor sodales, justo erat tempor eros"}
+      image={image}
+      imageFirst = {false}
+      buttonOne={"Get started"}
+      buttonTwo={"See Portfolio"}
+     />
   </main>
     
   )
