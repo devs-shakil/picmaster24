@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --primary-color:#31A8FF;
+  --primary-color:#F9F9F9;
   --secondary-color:#001E36;
   --primary-white:#fff;
   --primary-color-two:#10101A;
   --secondary-black:#000000;
+  --color-heading:#E2FF00;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -48,4 +49,7 @@
 }
 .color-black{
   color: var(--secondary-black);
+}
+.color-heading{
+  color: var(--color-heading);
 }
