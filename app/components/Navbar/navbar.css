@@ -2,15 +2,3 @@
     width:20px;
     height:20px;
 }
-.activeNav{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: -50%;
-    left: 50%;
-    background: black;
-    padding: 11px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
