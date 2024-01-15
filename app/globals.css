@@ -3,12 +3,14 @@
 @tailwind utilities;
 
 :root {
+  --primary-color-two:#1D2D44;
+  --primary-color-three:#748CAB;
+  --secondary-color:#3E5C76;
+  --secondary-color:#0D1321;
+  --color-heading:#F0EBD8;
   --primary-color:#F9F9F9;
-  --secondary-color:#001E36;
   --primary-white:#fff;
-  --primary-color-two:#10101A;
   --secondary-black:#000000;
-  --color-heading:#FF4D88;
 }
 
 @media (prefers-color-scheme: dark) {

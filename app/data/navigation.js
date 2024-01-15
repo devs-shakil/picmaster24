@@ -22,8 +22,8 @@ export const navigationLinks = [
   // services 
   export const servicesMenu = [
     { label: "Clipping path", href: "/" },
-    { label: "Image Masking Service", href: "/" },
-    { label: "Photo Retouching Service", href: "/" },
+    { label: "Image Masking ", href: "/" },
+    { label: "Photo Retouching ", href: "/" },
     { label: "Shadow & mirror effects", href: "/" },
     { label: "Ghost Mannequin Effect", href: "/" },
   ];
