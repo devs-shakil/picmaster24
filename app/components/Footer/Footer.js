@@ -7,8 +7,8 @@ export default function Footer() {
   return (
 <div className="bg-secondary">
   <div className="mx-auto container px-5 pb-6 pt-16  lg:pt-24">
-    <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-      <div>
+    <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 justify-center">
+      <div className="md:grid-cols-3 justify-center md:justify-left">
         <div className="flex justify-center text-teal-600 sm:justify-start">
             <Link 
                 href="/"    
@@ -17,19 +17,19 @@ export default function Footer() {
             </Link>
         </div>
 
-        <p className="mt-6 max-w-md text-center leading-relaxed sm:max-w-xs sm:text-left color-white">
+        <p className="mt-6 max-w-md text-center leading-relaxed  color-white mx-auto sm:text-left">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
           cum itaque neque.
         </p>
 
-        <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
+        <ul className="mt-5 md:mt-8 flex justify-center gap-2 w-full sm:justify-start">
             {socialIcon.map((link, index) =>(
-                 <li key={index}>
+                 <li key={index} className="">
                     <Link
                         href={link.href}
                         rel="noreferrer"
                         target="_blank"
-                        className="color-white transition hover:text-teal-700/75 bg-secondary "
+                        className="color-white transition hover:text-teal-700/75 bg-primary-two p-4 inline-flex rounded-md"
                         >
                        {link.icon}
                     </Link>
@@ -42,7 +42,7 @@ export default function Footer() {
         <div className="text-center sm:text-left">
           <p className="text-lg font-medium color-heading">Quick Link</p>
 
-          <ul className="mt-8 space-y-4 text-sm">
+          <ul className="mt-5 md:mt-8 space-y-4 text-sm">
           { navigationLinks.map((link, index) =>(
             <li key={index}>
                 <Link className="color-primary transition hover:color-heading" href={link.href}>
@@ -56,7 +56,7 @@ export default function Footer() {
         <div className="text-center sm:text-left">
           <p className="text-lg font-medium color-heading">Our Services</p>
 
-          <ul className="mt-8 space-y-4 text-sm">
+          <ul className="mt-5 md:mt-8 space-y-4 text-sm">
             {servicesMenu.map((link, index)=>(
                 <li key={index}>
                     <Link 
@@ -72,7 +72,7 @@ export default function Footer() {
         <div className="text-center sm:text-left">
           <p className="text-lg font-medium color-heading">Helpful Links</p>
 
-          <ul className="mt-8 space-y-4 text-sm">
+          <ul className="mt-5 md:mt-8 space-y-4 text-sm">
             {helpfullLink.map((link, index)=>(
                 <li key={index}>
                     <Link 
@@ -89,11 +89,11 @@ export default function Footer() {
         <div className="text-center sm:text-left">
           <p className="text-lg font-medium color-heading">Contact Us</p>
 
-          <ul className="mt-8 space-y-4 text-sm">
+          <ul className="mt-5 md:mt-8 space-y-4 text-sm">
             { contactUs.map((link, index)=>(
-                <li key={index}>
+                <li key={index} className="">
                     <Link
-                        className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end "
+                        className="flex items-center  gap-2  "
                         href={link.href}
                     >
                         <span className="color-white">{link.icon}</span>
