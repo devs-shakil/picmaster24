@@ -1,5 +1,6 @@
 import ImageWithText from "./components/ImageWithText/ImageWIthText";
 import image from './../public/images/header-right.png'
+import Services from "./components/Services/Services";
 
 
 export default function Home() {
@@ -12,6 +13,9 @@ export default function Home() {
       imageFirst = {false}
       buttonOne={"Get started"}
       buttonTwo={"See Portfolio"}
+     />
+     <Services
+      
      />
   </main>
     

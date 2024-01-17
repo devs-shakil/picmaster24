@@ -14,7 +14,7 @@ export default function ImageWithText({
         <div className= { `flex container px-5 ${ imageFirst ? 'flex-col-reverse' : ''  } flex-col sm:flex-row gap-3`}>
           <div className="w-full sm:w-2/4 flex justify-center items-center pt-4 ">
             <div className="flex flex-col gap-5 py-6 md:py-0">
-              <h2 className="text-3xl lg:leading-[80px] md:text-4xl lg:text-7xl color-heading">{title}</h2>
+              <h2 className="text-3xl lg:leading-[80px] md:text-4xl lg:text-7xl color-heading font-bold">{title}</h2>
               <p className="text-base md:text-xl md:leading-9 color-primary">{subtitle}</p>
               <div className="flex gap-6 itesm-center">
                 {

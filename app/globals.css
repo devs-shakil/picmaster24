@@ -34,6 +34,9 @@
 .bg-primary-two{
   background-color: var(--primary-color-two);
 }
+.bg-primary-three{
+  background-color: var(--primary-color-three);
+}
 .bg-secondary-black{
   background-color: var(--secondary-black);
 }
