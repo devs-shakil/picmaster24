@@ -10,7 +10,7 @@ export default function ImageWithText({
   }) {
     
     return (
-      <section className="bg-primary-two color-white">
+      <section className="white-bg">
         <div className= { `flex container px-5 ${ imageFirst ? 'flex-col-reverse' : ''  } flex-col sm:flex-row gap-3`}>
           <div className="w-full sm:w-2/4 flex justify-center items-center pt-4 ">
             <div className="flex flex-col gap-5 py-6 md:py-0">
@@ -21,7 +21,7 @@ export default function ImageWithText({
                     buttonOne && 
                     <Link 
                         href="/contact"
-                        className="w-[150px] bg-primary color-secondary font-bold  h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#009b49] before:to-[rgb(105,184,141)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
+                        className="w-[150px] bg-primary white-color font-bold  h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#009b49] before:to-[rgb(105,184,141)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
                         >
                         { buttonOne}
                          

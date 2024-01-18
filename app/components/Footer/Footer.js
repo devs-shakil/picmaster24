@@ -5,11 +5,11 @@ import {navigationLinks, socialIcon, servicesMenu, helpfullLink, contactUs } fro
 
 export default function Footer() {
   return (
-<div className="bg-secondary">
+<div className="bg-primary color-white">
   <div className="mx-auto container px-5 pb-6 pt-16  lg:pt-24">
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 justify-center">
       <div className="md:grid-cols-3 justify-center md:justify-left">
-        <div className="flex justify-center text-teal-600 sm:justify-start">
+        <div className="flex justify-center text-3xl sm:justify-start">
             <Link 
                 href="/"    
             >
@@ -22,14 +22,14 @@ export default function Footer() {
           cum itaque neque.
         </p>
 
-        <ul className="mt-5 md:mt-8 flex justify-center gap-2 w-full sm:justify-start">
+        <ul className="mt-5 md:mt-8 flex justify-center gap-2 w-full sm:justify-start ">
             {socialIcon.map((link, index) =>(
                  <li key={index} className="">
                     <Link
                         href={link.href}
                         rel="noreferrer"
                         target="_blank"
-                        className="color-white transition hover:text-teal-700/75 bg-primary-two p-4 inline-flex rounded-md"
+                        className="color-secondary transition hover:text-teal-700/75 white-bg p-4 inline-flex rounded-md "
                         >
                        {link.icon}
                     </Link>
@@ -40,7 +40,7 @@ export default function Footer() {
 
       <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
         <div className="text-center sm:text-left">
-          <p className="text-lg font-medium color-heading">Quick Link</p>
+          <p className="text-lg font-medium color-heading color-secondary">Quick Link</p>
 
           <ul className="mt-5 md:mt-8 space-y-4 text-sm">
           { navigationLinks.map((link, index) =>(
@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
 
         <div className="text-center sm:text-left">
-          <p className="text-lg font-medium color-heading">Our Services</p>
+          <p className="text-lg font-medium color-heading color-secondary">Our Services</p>
 
           <ul className="mt-5 md:mt-8 space-y-4 text-sm">
             {servicesMenu.map((link, index)=>(
@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
 
         <div className="text-center sm:text-left">
-          <p className="text-lg font-medium color-heading">Helpful Links</p>
+          <p className="text-lg font-medium color-heading color-secondary">Helpful Links</p>
 
           <ul className="mt-5 md:mt-8 space-y-4 text-sm">
             {helpfullLink.map((link, index)=>(
@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
 
         <div className="text-center sm:text-left">
-          <p className="text-lg font-medium color-heading">Contact Us</p>
+          <p className="text-lg font-medium color-heading color-secondary">Contact Us</p>
 
           <ul className="mt-5 md:mt-8 space-y-4 text-sm">
             { contactUs.map((link, index)=>(
