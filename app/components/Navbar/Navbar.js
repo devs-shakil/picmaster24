@@ -18,7 +18,7 @@ export default function Navbar() {
                     </Link> 
             </div>
             <div>
-                <ul className=" text-base font-bold hidden md:flex bg-primary  ">
+                <ul className=" text-base font-bold hidden md:flex   ">
                     <li>
                         <Link  className="py-7  px-2  inline-flex" href="/">Home</Link>
                     </li>
@@ -40,7 +40,7 @@ export default function Navbar() {
                 </ul>
             </div>
        </div>
-       <ul className="flex  md:hidden fixed bottom-0 right-0 left-0 bg-primary color-secondar  text-[10px] px-5 items-center justify-between">
+       <ul className="flex  md:hidden fixed bottom-0 right-0 left-0 bg-secondary color-white  text-[10px] px-5 items-center justify-center gap-1">
             <li className="">
                 <Link
                     href="/"

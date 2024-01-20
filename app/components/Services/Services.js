@@ -18,9 +18,9 @@ export default function Services(
    <section className="bg-gray-100 py-3 md:py-8">
         <div className="container px-5 mx-auto flex flex-col gap-4">
             <div className="pb-4">
-                <div className="text-center max-w-lg mx-auto md:max-w-3xl">
+                <div className="text-center max-w-lg mx-auto md:max-w-5xl">
                     <h2 className="text-3xl md:text-5xl font-bold py-3">{title}</h2>
-                    <p className="text-base md:text-2xl ">{subtitle}</p>
+                    <p className="text-base md:text-xl md:leading-8 color-primary">{subtitle}</p>
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 allow-slider" >
