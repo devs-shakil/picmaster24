@@ -9,7 +9,7 @@ export default function Footer() {
   <div className="mx-auto container px-5 pb-6 pt-16  lg:pt-24">
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 justify-center">
       <div className="md:grid-cols-3 justify-center md:justify-left">
-        <div className="flex justify-center text-3xl sm:justify-start">
+        <div className="flex justify-center text-3xl lg:justify-start">
             <Link 
                 href="/"    
             >
@@ -22,7 +22,7 @@ export default function Footer() {
           cum itaque neque.
         </p>
 
-        <ul className="mt-5 md:mt-8 flex justify-center gap-2 w-full sm:justify-start social-media">
+        <ul className="mt-5 md:mt-8 flex justify-center gap-2 w-full lg:justify-start social-media">
             {socialIcon.map((link, index) =>(
                  <li key={index} className="">
                     <Link
@@ -45,7 +45,7 @@ export default function Footer() {
           <ul className="mt-5 md:mt-8 space-y-4 text-sm">
           { navigationLinks.map((link, index) =>(
             <li key={index}>
-                <Link className="color-primary transition hover:color-heading" href={link.href}>
+                <Link className=" transition hover:color-heading" href={link.href}>
                     {link.label}
                 </Link>
             </li>
@@ -107,13 +107,13 @@ export default function Footer() {
       </div>
     </div>
 
-    <div className="mt-12 border-t border-gray-100 pt-6">
+    <div className="mt-12 border-t border-gray-100 pt-6 pb-10">
       <div className="text-center sm:flex sm:justify-between sm:text-left">
         <p className="text-sm text-gray-500">
           <span className="block sm:inline">All rights reserved.</span>
         </p>
-        <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">&copy; 2024 <Link href="/">Picmaster24</Link></p>
-        <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0"> 
+        <p className="mt-2 text-sm text-gray-500 sm:order-first sm:mt-0">&copy; 2024 <Link href="/">Picmaster24</Link></p>
+        <p className="mt-2 text-sm text-gray-500 sm:order-first sm:mt-0"> 
             Website Design and Developed by 
           <Link href="https://github.com/devs-shakil" target="_blank" className="text-indigo-600"> Devs.shakil</Link>
         </p>
