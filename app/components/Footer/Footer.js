@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaFacebook, FaInstagramSquare, FaTwitter ,FaWhatsapp  } from "react-icons/fa";
 import {navigationLinks, socialIcon, servicesMenu, helpfullLink, contactUs } from "./../../data/navigation"
-
+import './footer.css'
 
 export default function Footer() {
   return (
@@ -22,7 +22,7 @@ export default function Footer() {
           cum itaque neque.
         </p>
 
-        <ul className="mt-5 md:mt-8 flex justify-center gap-2 w-full sm:justify-start ">
+        <ul className="mt-5 md:mt-8 flex justify-center gap-2 w-full sm:justify-start social-media">
             {socialIcon.map((link, index) =>(
                  <li key={index} className="">
                     <Link
@@ -112,8 +112,12 @@ export default function Footer() {
         <p className="text-sm text-gray-500">
           <span className="block sm:inline">All rights reserved.</span>
         </p>
-
         <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">&copy; 2024 <Link href="/">Picmaster24</Link></p>
+        <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0"> 
+            Website Design and Developed by 
+          <Link href="https://github.com/devs-shakil" target="_blank" className="text-indigo-600"> Devs.shakil</Link>
+        </p>
+       
       </div>
     </div>
   </div>

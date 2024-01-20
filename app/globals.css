@@ -37,3 +37,12 @@
 .color-black{
   color: var(--black);
 }
+
+.hover-primary:hover{
+  background-color:var(--primary-color);
+  color: var(--white);
+}
+.hover-secondary:hover{
+  background-color: var(--secondary-color);
+  color: var(--white);
+}

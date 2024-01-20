@@ -1,0 +1,10 @@
+.social-media a svg{
+    font-size:25px;
+}
+.social-media a{
+    transition: all 0.3s ease-in-out;
+}
+.social-media a:hover{
+    background-color: #DF283A;
+    color:#fff;
+}
