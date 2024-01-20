@@ -18,7 +18,7 @@ export default function Navbar() {
                     </Link> 
             </div>
             <div>
-                <ul className=" text-base font-bold hidden md:flex bg-primary  ">
+                <ul className=" text-base font-bold hidden md:flex   ">
                     <li>
                         <Link  className="py-7  px-2  inline-flex" href="/">Home</Link>
                     </li>
