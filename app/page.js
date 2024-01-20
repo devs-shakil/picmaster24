@@ -15,7 +15,9 @@ export default function Home() {
       buttonTwo={"See Portfolio"}
      />
      <Services
-      
+      title = {"Our Services"}
+      subtitle={ "We probably operate the best offshore Graphics design studio in Asia. To make sure we keep delivering top quality we only employ the best DTP professionals."}
+      slider = {true}
      />
   </main>
     
