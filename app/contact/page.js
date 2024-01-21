@@ -1,25 +1,30 @@
+import { FaPhone } from "react-icons/fa";
+import { MdMail  } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
+import './contact.css'
+import Link from "next/link";
 export default function contact() {
     return (
     
         <section className="bg-gray-50">
           <div className="mx-auto container px-5 py-16 ">
             <div className="grid grid-cols-1 lg:grid-cols-5 shadow-sm  ">
-              <div className="lg:col-span-2 lg:py-12 bg-primary color-white px-8">
-                <h2>Contact Information</h2>
-                <p>Contact us, we will reply as soon as possible</p>
-                <div>
-                  <div>
-                    <span>icon</span>
-                    <span>3434123465</span>
-                  </div>
-                  <div>
-                    <span>icon</span>
-                    <span>hello@gmail.com</span>
-                  </div>
-                  <div>
-                    <span>icon</span>
-                    <span>Location</span>
-                  </div>
+                <div className="lg:col-span-2 lg:py-12 bg-primary color-white px-8 ">
+                    <h2 className="text-xl md:text-4xl font-bold pb-2">Contact Information</h2>
+                    <p className="text-xl font-semibold ">Contact us, we will reply as soon as possible</p>
+                    <div className="flex flex-col py-5 gap-5 text-xl my-5 contact ">
+                      <Link href="" className="flex gap-3 items-center ">
+                        <span><FaPhone/></span>
+                        <span>8801780783657</span>
+                      </Link>
+                      <Link href="" className="flex gap-3 items-center ">
+                        <span><MdMail/></span>
+                        <span>picmasterr24@gmail.com</span>
+                      </Link>
+                      <Link href="" className="flex gap-3 items-center ">
+                        <span><FaLocationDot/></span>
+                        <span>Mirpur 10, Dhaka , Bangladesh</span>
+                      </Link>  
                 </div>
               </div>
 

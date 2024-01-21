@@ -37,7 +37,7 @@ export const helpfullLink = [
   
 //contact us
 export const contactUs = [
-    { label: "mail@picmaster24.com", href: "/", icon:  <IoMail />},
+    { label: "picmasterr24@gmail.com", href: "/", icon:  <IoMail />},
     { label: "8801780783657", href: "/" , icon: <FaPhone/> },
     { label: "Mirpur 10, Dhaka , Bangladesh", href: "/", icon: <FaLocationDot /> },
   ];
