@@ -3,29 +3,41 @@ import { MdMail  } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import './contact.css'
 import Link from "next/link";
+import {socialIcon, contactUs } from '../data/navigation'
 export default function contact() {
     return (
     
         <section className="bg-gray-50">
-          <div className="mx-auto container px-5 py-16 ">
-            <div className="grid grid-cols-1 lg:grid-cols-5 shadow-sm  ">
-                <div className="lg:col-span-2 lg:py-12 bg-primary color-white px-8 ">
-                    <h2 className="text-xl md:text-4xl font-bold pb-2">Contact Information</h2>
-                    <p className="text-xl font-semibold ">Contact us, we will reply as soon as possible</p>
-                    <div className="flex flex-col py-5 gap-5 text-xl my-5 contact ">
-                      <Link href="" className="flex gap-3 items-center ">
-                        <span><FaPhone/></span>
-                        <span>8801780783657</span>
-                      </Link>
-                      <Link href="" className="flex gap-3 items-center ">
-                        <span><MdMail/></span>
-                        <span>picmasterr24@gmail.com</span>
-                      </Link>
-                      <Link href="" className="flex gap-3 items-center ">
-                        <span><FaLocationDot/></span>
-                        <span>Mirpur 10, Dhaka , Bangladesh</span>
-                      </Link>  
+          <div className="mx-auto container px-5 py-5 md:py-10 ">
+            <div className="grid grid-cols-1 lg:grid-cols-5 shadow-lg ">
+                <div className="lg:col-span-2 lg:py-12 bg-primary color-white px-10 flex flex-col gap-6 justify-center py-7 text-center md:text-left md:justify-center ">
+                   <div>
+                    <h2 className="text-3xl md:text-4xl font-bold pb-2">Contact Information</h2>
+                      <p className="text-base font-semibold ">Contact us, we will reply as soon as possible</p>
+                   </div>
+                    <div className="flex flex-col gap-5 text-xl my-5 contact items-center md:items-start md:text-left ">
+                      {contactUs.map((item, index) =>(
+                          <Link href={item.href} className="flex gap-4 items-center ">
+                            <span>{item.icon}</span>
+                            <span>{item.label}</span>
+                          </Link>
+                      ))}
+                      
                 </div>
+                <ul className=" flex justify-center gap-3 w-full lg:justify-start social-media">
+                  {socialIcon.map((link, index) =>(
+                      <li key={index} className="">
+                          <Link
+                              href={link.href}
+                              rel="noreferrer"
+                              target="_blank"
+                              className="color-secondary transition hover:text-teal-700/75 white-bg p-4 inline-flex rounded-md "
+                              >
+                            {link.icon}
+                          </Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               <div className=" bg-white p-8  lg:col-span-3 lg:p-12">

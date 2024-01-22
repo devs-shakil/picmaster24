@@ -13,10 +13,11 @@ export const navigationLinks = [
   
 // social media
   export const socialIcon = [
+    { icon: <FaWhatsapp/>, href: "/" },
     { icon: <FaFacebook/> , href: "/" },
     { icon: <FaInstagramSquare/>, href: "/" },
     { icon: <FaTwitter/>, href: "/" },
-    { icon: <FaWhatsapp/>, href: "/" },
+    
   ];
 
   // services 
