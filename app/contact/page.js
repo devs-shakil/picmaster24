@@ -1,10 +1,30 @@
+
 import { FaPhone } from "react-icons/fa";
 import { MdMail  } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import './contact.css'
 import Link from "next/link";
 import {socialIcon, contactUs } from '../data/navigation'
+
 export default function contact() {
+  const test = "re_Spo8btjZ_KLAAwQCcUvbHW6MwMwrhEYVa"
+      async function create(formData) {
+       
+        await fetch("https://api.resend.com/emails", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${test}`,
+          },
+          body: JSON.stringify({
+            from: "shakil.info82@gmail.com",
+            to: "devs.shakil@gmail.com",
+            subject: formData.get("subject"),
+            text: "This works!",
+          }),
+        });
+        console.log("Email sent!");
+      }
     return (
     
         <section className="bg-gray-50">
@@ -41,10 +61,10 @@ export default function contact() {
               </div>
 
               <div className=" bg-white p-8  lg:col-span-3 lg:p-12">
-                <form action="" className="space-y-4">
+                <form action="{create}" className="space-y-4">
                   <div className="flex flex-col gap-1"> 
                     <label 
-                        for="name"
+                        htmlFor="name"
                         className=""
                       >
                         Full Name: 
@@ -54,12 +74,13 @@ export default function contact() {
                       placeholder="Enter Full Name"
                       type="text"
                       id="name"
+                      name='subject'
                     />
                   </div>
 
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <div className="flex flex-col gap-1">
-                      <label for="email">
+                      <label htmlFor="email">
                           Email:
                       </label>
                       <input
@@ -71,7 +92,7 @@ export default function contact() {
                     </div>
 
                     <div className="flex flex-col gap-1">
-                      <label for="email">
+                      <label htmlFor="phone">
                             Phone Number:
                         </label>
                       <input

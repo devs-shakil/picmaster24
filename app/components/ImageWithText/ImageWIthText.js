@@ -3,6 +3,8 @@ import Image from "next/image";
 export default function ImageWithText({
     title,
     subtitle,
+    subtitleTwo,
+    subtitleThree,
     image,
     imageFirst,
     buttonOne,
@@ -11,11 +13,20 @@ export default function ImageWithText({
     
     return (
       <section className="white-bg">
-        <div className= { `flex container px-5 ${ imageFirst ? 'flex-col-reverse' : ''  } flex-col sm:flex-row gap-3`}>
+        <div className= { `flex container px-5 ${ imageFirst ? 'flex-col-reverse md:flex-row-reverse gap-2 md:gap-8' : ''  } flex-col sm:flex-row gap-3`}>
           <div className="w-full sm:w-2/4 flex justify-center items-center pt-4 ">
             <div className="flex flex-col gap-5 py-6 md:py-0">
-              <h2 className="text-3xl lg:leading-[80px] md:text-4xl lg:text-7xl color-heading font-bold">{title}</h2>
+              <h2 className="text-3xl lg:leading-[60px] md:text-4xl lg:text-5xl color-heading font-bold">{title}</h2>
+             
               <p className="text-base md:text-xl md:leading-8 color-primary">{subtitle}</p>
+                {subtitleTwo && 
+                  <p className="text-base md:text-xl md:leading-8 color-primary">{subtitleTwo}</p>
+                }
+                {
+                  subtitleThree &&
+                  <p className="text-base md:text-xl md:leading-8 color-primary">{subtitleThree}</p>
+                }
+            
               <div className="flex gap-6 itesm-center">
                 {
                     buttonOne && 

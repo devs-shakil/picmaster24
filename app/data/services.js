@@ -17,7 +17,7 @@ export const servicesItems = [
     { 
         image:'/images/services4.jpg',
         title: "Multiple Clipping Path",
-        subtitle: "Clippingpixel24 is a vanguard hand oriented multiple clipping path services provider aside using the unparalleled Photoshop..." ,
+        subtitle: "picmaster24 is a vanguard hand oriented multiple clipping path services provider aside using the unparalleled Photoshop..." ,
     },
     { 
         image:'/images/services5.jpg',
