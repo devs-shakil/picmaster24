@@ -12,7 +12,8 @@ export default function ImageWithText({
   }) {
     
     return (
-      <section className="white-bg">
+      <section className="white-bg"> 
+        <h1>test</h1>
         <div className= { `flex container px-5 ${ imageFirst ? 'flex-col-reverse md:flex-row-reverse gap-2 md:gap-8' : ''  } flex-col sm:flex-row gap-3`}>
           <div className="w-full sm:w-2/4 flex justify-center items-center pt-4 ">
             <div className="flex flex-col gap-5 py-6 md:py-0">
