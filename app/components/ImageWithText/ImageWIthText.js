@@ -1,23 +1,31 @@
 import Link from "next/link";
 import Image from "next/image";
 export default function ImageWithText({
+    heading,
     title,
     subtitle,
     subtitleTwo,
     subtitleThree,
     image,
     imageFirst,
+    bgWhite,
     buttonOne,
     buttonTwo
   }) {
     
     return (
-      <section className="white-bg">
+      <section className={` py-5 md:py-10 ${bgWhite ? 'bg-white': "bg-gray-50 " }`}> 
+        <div className="container px-5  ">
+            {heading &&
+              <h2 className="pb-3 text-3xl md:text-4xl lg:text-5xl font-bold color-heading text-left md:text-center">{heading}</h2>
+            }
+        </div>
         <div className= { `flex container px-5 ${ imageFirst ? 'flex-col-reverse md:flex-row-reverse gap-2 md:gap-8' : ''  } flex-col sm:flex-row gap-3`}>
-          <div className="w-full sm:w-2/4 flex justify-center items-center pt-4 ">
-            <div className="flex flex-col gap-5 py-6 md:py-0">
-              <h2 className="text-3xl lg:leading-[60px] md:text-4xl lg:text-5xl color-heading font-bold">{title}</h2>
-             
+          <div className="w-full sm:w-2/4 flex justify-center items-center">
+            <div className="flex flex-col gap-5 py-3 md:py-2">
+              {title && 
+                <h2 className=" lg:leading-[60px] md:text-4xl lg:text-5xl color-heading font-bold text-3xl">{title}</h2>
+              }             
               <p className="text-base md:text-xl md:leading-8 color-primary">{subtitle}</p>
                 {subtitleTwo && 
                   <p className="text-base md:text-xl md:leading-8 color-primary">{subtitleTwo}</p>
@@ -52,13 +60,16 @@ export default function ImageWithText({
             </div>
           </div>
           <div className="w-full sm:w-2/4 ">
-            <Image
-              src={image}
-              width="500"
-              height="500"
-              className="w-full h-auto"
-              alt=""
-            />
+            {
+              image &&
+                <Image
+                src={image}
+                width="500"
+                height="500"
+                className="w-full h-auto"
+                alt=""
+              />
+            }
           </div>
         </div>
       </section>
