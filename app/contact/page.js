@@ -37,7 +37,7 @@ export default function contact() {
                    </div>
                     <div className="flex flex-col gap-5 text-xl my-5 contact items-center md:items-start md:text-left ">
                       {contactUs.map((item, index) =>(
-                          <Link href={item.href} className="flex gap-4 items-center ">
+                          <Link key={index} href={item.href} className="flex gap-4 items-center ">
                             <span>{item.icon}</span>
                             <span>{item.label}</span>
                           </Link>
