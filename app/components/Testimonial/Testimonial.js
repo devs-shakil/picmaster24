@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react' 
@@ -5,9 +6,12 @@ import { useKeenSlider } from 'keen-slider/react'
 export default function Testimonial() {
 
      const [sliderRef, instanceRef] = useKeenSlider(
+
         {
+        loop:true,
         slideChanged() {
-            console.log('slide changed')
+                    
+           
         },
         },
         [
