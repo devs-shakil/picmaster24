@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagramSquare, FaTwitter ,FaWhatsapp,FaPhone   } from "react-icons/fa";
+import { FaFacebook, FaLinkedinIn , FaTwitter ,FaWhatsapp,FaPhone ,FaSkype    } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 
@@ -13,10 +13,11 @@ export const navigationLinks = [
   
 // social media
   export const socialIcon = [
-    { icon: <FaWhatsapp/>, href: "/" },
-    { icon: <FaFacebook/> , href: "/" },
-    { icon: <FaInstagramSquare/>, href: "/" },
-    { icon: <FaTwitter/>, href: "/" },
+    { icon: <FaWhatsapp/>, href: "https://wa.me/+8801642080280" },
+    { icon: <FaFacebook/> , href: "https://www.facebook.com/Picmaster24" },
+    { icon: <FaSkype/>, href: "https://join.skype.com/invite/qVIGXAhLTlJm" },
+    { icon: <FaTwitter/>, href: "https://twitter.com/picmaster24" },
+    { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/in/pic-master-54b8262b0/" },
     
   ];
 
@@ -38,8 +39,8 @@ export const helpfullLink = [
   
 //contact us
 export const contactUs = [
-    { label: "picmasterr24@gmail.com", href: "/", icon:  <IoMail />},
-    { label: "8801780783657", href: "/" , icon: <FaPhone/> },
-    { label: "Mirpur 10, Dhaka , Bangladesh", href: "/", icon: <FaLocationDot /> },
+    { label: "picmasterr24@gmail.com", href: "mailto:picmasterr24@gmail.com", icon:  <IoMail />},
+    { label: "+8801642080280", href: "tel:+8801642080280" , icon: <FaPhone/> },
+    { label: "Mirpur 10, Dhaka , Bangladesh", href: "https://maps.app.goo.gl/bDT26K4dsjgCYpGEA", icon: <FaLocationDot /> },
   ];
   

@@ -37,14 +37,14 @@ export default function contact() {
                    </div>
                     <div className="flex flex-col gap-5 text-xl my-5 contact items-center md:items-start md:text-left ">
                       {contactUs.map((item, index) =>(
-                          <Link key={index} href={item.href} className="flex gap-4 items-center ">
+                          <Link key={index} href={item.href} className="flex gap-4 items-center "  target="_blank">
                             <span>{item.icon}</span>
                             <span>{item.label}</span>
                           </Link>
                       ))}
                       
                 </div>
-                <ul className=" flex justify-center gap-3 w-full lg:justify-start social-media">
+                <ul className=" flex justify-center gap-2 w-full lg:justify-start social-media">
                   {socialIcon.map((link, index) =>(
                       <li key={index} className="">
                           <Link
