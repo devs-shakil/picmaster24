@@ -1,6 +1,10 @@
+import Services from "../components/Services/Services";
+
 export default function services() {
     return (
-      <h2 className="text-3xl">services</h2>
+    <main>
+      <Services/>
+    </main>
       
     )
   }

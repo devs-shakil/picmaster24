@@ -29,11 +29,12 @@ export default function Navbar() {
                          <Link className="py-7 px-2  inline-flex" href="/services">Services</Link>
                     </li>
                     <li>
-                        <Link className="py-7  px-2 inline-flex" href="/pricing">Pricing</Link>
-                    </li>
-                    <li>
                          <Link className="py-7 px-2  inline-flex" href="/portfolio">Porfolio</Link>
                     </li>
+                    <li>
+                        <Link className="py-7  px-2 inline-flex" href="/pricing">Pricing</Link>
+                    </li>
+                    
                     <li>
                          <Link className="py-7 px-2  inline-flex" href="/contact">Contact</Link>
                     </li>
@@ -70,15 +71,6 @@ export default function Navbar() {
             </li>
             <li className="">
                 <Link
-                     href="/pricing"
-                     className="flex flex-col items-center justify-center px-2  py-2 gap-1"
-                >
-                    <span>< RiMoneyDollarBoxFill /></span>
-                    <span>Pricing</span>
-                </Link>
-            </li>
-            <li className="">
-                <Link
                      href="/portfolio"
                      className="flex flex-col items-center justify-center gpx-2  py-2 gap-1"
                 >
@@ -86,6 +78,16 @@ export default function Navbar() {
                     <span>Portfolio</span>
                 </Link>
             </li>
+            <li className="">
+                <Link
+                     href="/pricing"
+                     className="flex flex-col items-center justify-center px-2  py-2 gap-1"
+                >
+                    <span>< RiMoneyDollarBoxFill /></span>
+                    <span>Pricing</span>
+                </Link>
+            </li>
+           
             <li className="">
                 <Link 
                     href="/contact"

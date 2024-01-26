@@ -53,7 +53,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="text-center sm:text-left">
+        <div className="text-center sm:text-left ">
           <p className="text-lg font-medium color-heading color-secondary">Our Services</p>
 
           <ul className="mt-5 md:mt-8 space-y-4 text-sm">
@@ -86,7 +86,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="text-center sm:text-left">
+        <div className="text-center sm:text-left break-all">
           <p className="text-lg font-medium color-heading color-secondary">Contact Us</p>
 
           <ul className="mt-5 md:mt-8 space-y-4 text-sm">
@@ -95,6 +95,7 @@ export default function Footer() {
                     <Link
                         className="flex items-center  gap-2  "
                         href={link.href}
+                        target="_blank"
                     >
                         <span className="color-white">{link.icon}</span>
                         <span className="flex-1 color-white">{link.label}</span>
