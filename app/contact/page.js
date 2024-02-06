@@ -35,7 +35,7 @@ export default function contact() {
                     <h2 className="text-3xl md:text-4xl font-bold pb-2">Contact Information</h2>
                       <p className="text-base font-semibold ">Contact us, we will reply as soon as possible</p>
                    </div>
-                    <div className="flex flex-col gap-5 text-xl my-5 contact items-center md:items-start md:text-left ">
+                    <div className="flex flex-col gap-4 text-sm my-5 contact items-center md:items-start md:text-left ">
                       {contactUs.map((item, index) =>(
                           <Link key={index} href={item.href} className="flex gap-4 items-center "  target="_blank">
                             <span>{item.icon}</span>
@@ -44,14 +44,14 @@ export default function contact() {
                       ))}
                       
                 </div>
-                <ul className=" flex justify-center gap-2 w-full lg:justify-start social-media">
+                <ul className=" flex justify-center gap-1 w-full lg:justify-start social-media">
                   {socialIcon.map((link, index) =>(
                       <li key={index} className="">
                           <Link
                               href={link.href}
                               rel="noreferrer"
                               target="_blank"
-                              className="color-secondary transition hover:text-teal-700/75 white-bg p-4 inline-flex rounded-md "
+                              className="color-secondary transition hover:text-teal-700/75 white-bg p-3 inline-flex rounded-md "
                               >
                             {link.icon}
                           </Link>
@@ -60,7 +60,7 @@ export default function contact() {
                 </ul>
               </div>
 
-              <div className=" bg-white p-8  lg:col-span-3 lg:p-12">
+              <div className=" bg-white p-4  lg:col-span-3 lg:p-12">
                 <form action="{create}" className="space-y-4">
                   <div className="flex flex-col gap-1"> 
                     <label 
@@ -115,7 +115,7 @@ export default function contact() {
                     ></textarea>
                   </div>
 
-                  <div className="mt-4 flex justify-end">
+                  <div className="mt-4 flex justify-end text-sm ">
                     <button
                       type="submit"
                       className="w-[150px] bg-primary white-color font-bold  h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#DF283A] before:to-[#DF283A] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
