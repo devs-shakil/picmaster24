@@ -29,7 +29,7 @@ export default function Footer() {
                         href={link.href}
                         rel="noreferrer"
                         target="_blank"
-                        className="color-secondary transition hover:text-teal-700/75 white-bg p-4 inline-flex rounded-md "
+                        className="color-secondary transition hover:text-teal-700/75 white-bg p-3 inline-flex rounded-md "
                         >
                        {link.icon}
                     </Link>
@@ -115,7 +115,7 @@ export default function Footer() {
         </p>
         <p className="mt-2 text-sm text-gray-500 sm:order-first sm:mt-0">&copy; 2024 <Link href="/">Picmaster24</Link></p>
         <p className="mt-2 text-sm text-gray-500 sm:order-first sm:mt-0"> 
-            Website Design and Developed by 
+             Design and Developed by 
           <Link href="https://github.com/devs-shakil" target="_blank" className="text-indigo-600"> Devs.shakil</Link>
         </p>
        
