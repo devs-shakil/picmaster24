@@ -1,42 +1,72 @@
+'use client';
+
 import Link from "next/link";
 import { FaHome , FaInfoCircle  } from "react-icons/fa";   
 import { MdOutlineContactPhone ,MdMedicalServices  } from "react-icons/md"; 
 import { RiMoneyDollarBoxFill } from "react-icons/ri";
 import { IoBookmarksSharp } from "react-icons/io5"
 import './navbar.css'
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+    const pathname = usePathname();
+    
     return (
      <div className="navbar bg-primary  color-white  ">
        <div className="flex justify-between container  uppercase w-full flex-col  md:flex-row px-5 ">
             <div>
-                    <Link
-                        href="/"
-                        className="py-7 inline-flex"
-                    >
-                        LOGO
-                    </Link> 
+                <Link
+                    href="/"
+                    className="py-4 inline-flex font-bold "
+                >
+                    Picmaster24
+                </Link> 
             </div>
             <div>
                 <ul className=" text-base font-bold hidden md:flex   ">
                     <li>
-                        <Link  className="py-7  px-2  inline-flex" href="/">Home</Link>
+                        <Link  
+                            className={`py-4   px-3  inline-flex  ${pathname ==='/' ? 'active':' ' } ` } 
+                            href="/"
+                        >
+                            Home
+                        </Link>
                     </li>
                     <li>
-                         <Link className="py-7  px-2  inline-flex"     href="/about">About Us</Link>
+                         <Link 
+                            className={`py-4  px-3  inline-flex  ${pathname === '/about' ?  'active' : ''}`}    href="/about"
+                        >
+                                About Us
+                        </Link>
                     </li>
                     <li>
-                         <Link className="py-7 px-2  inline-flex" href="/services">Services</Link>
+                         <Link 
+                            className={`py-4 px-3  inline-flex ${pathname === '/services' ?  'active' : ''}`} href="/services"
+                        >
+                            Services
+                        </Link>
                     </li>
                     <li>
-                         <Link className="py-7 px-2  inline-flex" href="/portfolio">Porfolio</Link>
+                         <Link 
+                            className={`py-4 px-3  inline-flex ${pathname === '/portfolio' ?  'active' : ''}`} 
+                            href="/portfolio">
+                            Porfolio
+                        </Link>
                     </li>
                     <li>
-                        <Link className="py-7  px-2 inline-flex" href="/pricing">Pricing</Link>
+                        <Link 
+                        className={`py-4  px-3 inline-flex ${pathname === '/pricing' ?  'active' : ''} `} 
+                        href="/pricing">
+                            Pricing
+                        </Link>
                     </li>
                     
                     <li>
-                         <Link className="py-7 px-2  inline-flex" href="/contact">Contact</Link>
+                         <Link 
+                            className={`py-4 px-3  inline-flex ${pathname === '/contact' ?  'active' : ''}`}
+                            href="/contact">
+                            Contact
+                        </Link>
                     </li>
                 </ul>
             </div>

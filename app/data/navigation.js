@@ -33,8 +33,8 @@ export const navigationLinks = [
 // helpfull link
 export const helpfullLink = [
     { label: "FAQs", href: "/" },
-    { label: "Support", href: "/" },
-    { label: "Live Chat", href: "/" },
+    { label: "Support", href: "https://join.skype.com/invite/qVIGXAhLTlJm" },
+    { label: "Live Chat", href: "https://join.skype.com/invite/qVIGXAhLTlJm" },
   ];
   
 //contact us

@@ -44,7 +44,7 @@ export default function contact() {
                       ))}
                       
                 </div>
-                <ul className=" flex justify-center gap-1 w-full lg:justify-start social-media">
+                <ul className=" flex justify-center gap-2 w-full lg:justify-start social-media">
                   {socialIcon.map((link, index) =>(
                       <li key={index} className="">
                           <Link
