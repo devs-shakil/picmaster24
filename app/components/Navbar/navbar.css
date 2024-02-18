@@ -7,3 +7,8 @@
         background-color: #DF283A;
     }
 }
+.active{
+    background-color: #DF283A;
+    color: white;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}

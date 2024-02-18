@@ -13,7 +13,7 @@ export default function Footer() {
             <Link 
                 href="/"    
             >
-                Logo
+                Picmaster24
             </Link>
         </div>
 
