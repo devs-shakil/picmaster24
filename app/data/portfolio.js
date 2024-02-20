@@ -41,7 +41,7 @@ export const categories = [
 export const portfolio  = [
     {   
         id:1,
-        imageUrl:"",
+        imageUrl:"/images/path-1.webp",
         alt:"",
         category:{
             name:"Clipping Path",
@@ -50,7 +50,7 @@ export const portfolio  = [
     },
     {   
         id:2,
-        imageUrl:"",
+        imageUrl:"/images/path-2.webp",
         alt:"",
         category:{
             name:"Clipping Path",
