@@ -59,7 +59,7 @@ export const portfolio  = [
     },
     {   
         id:3,
-        imageUrl:"",
+        imageUrl:"/images/path-3.webp",
         alt:"",
         category:{
             name:"Clipping Path",
@@ -68,7 +68,7 @@ export const portfolio  = [
     },
     {   
         id:4,
-        imageUrl:"",
+        imageUrl:"/images/path-4.webp",
         alt:"",
         category:{
             name:"Clipping Path",
@@ -93,4 +93,11 @@ export const portfolio  = [
             slug:"Images Masking"
         }
     }
+]
+
+export const imgLightBoxSrc=[
+    '/images/path-1.webp',
+    '/images/path-2.webp',
+    '/images/path-3.webp',
+    '/images/path-4.webp'
 ]

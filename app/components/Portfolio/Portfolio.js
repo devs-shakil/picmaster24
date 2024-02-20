@@ -3,6 +3,7 @@
 import { useEffect, useState,useCallback  } from "react";
 import { categories } from "@/app/data/portfolio";
 import { portfolio } from "@/app/data/portfolio";
+import { imgLightBoxSrc } from "@/app/data/portfolio";
 import Image from "next/image";
 import "./Portfolio.css";
 import Link from "next/link";
@@ -96,7 +97,7 @@ const Portfolio = () => {
       </div>
        {isViewerOpen && (
         <ImageViewer
-          src={ portfolio }
+          src={ imgLightBoxSrc }
           currentIndex={ currentImage }
           disableScroll={ false }
           closeOnClickOutside={ true }
