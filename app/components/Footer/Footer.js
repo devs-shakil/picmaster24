@@ -18,8 +18,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-6 max-w-md text-center leading-relaxed  color-white mx-auto sm:text-left">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
-          cum itaque neque.
+          picmaster24 is an internet based outsourcing organization which is situated in the emerging Asian economic reason; where it is geologically and technologically opportune with low cost. 
         </p>
 
         <ul className="mt-5 md:mt-8 flex justify-center gap-2 w-full lg:justify-start social-media">

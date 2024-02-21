@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import {servicesItems} from './../../data/services'
+import {servicesItems} from './../../data/services';
+import './Services.css'
 
 
 
@@ -26,15 +27,16 @@ export default function Services(
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 allow-slider" >
                 {servicesItems.map((item, index)=>(
                     <div className="flex flex-col  shadow-lg" key={index}>
-                        <div className="rounded-t-lg">
+                        <div className="rounded-t-lg relative ">
                             <Image
                             src={item.image}
-                            className="w-full h-auto rounded-t-lg"
+                            className="w-full h-auto rounded-t-lg services-wrapper"
                             width='500'
                             height="400"
                             loading="lazy"
                             alt=""
                             />
+                            <div className="overlay   "></div>
                         </div>
                         <div className="w-full bg-primary color-white py-5 px-8  min-h-[260px] rounded-b-lg" >
                             <h3 className="text-2xl text-center py-4 font-bold  ">{item.title}</h3>

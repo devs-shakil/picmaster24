@@ -1,0 +1,15 @@
+.overlay{
+    background-color: rgba(240, 248, 255, 0.468);
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top:0;
+    right: 0;
+    left:0;
+    bottom: 0;
+}
+img.services-wrapper:hover .overlay{
+    display: block;
+   
+}
