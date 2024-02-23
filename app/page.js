@@ -3,11 +3,13 @@ import image from './../public/images/header-right.png'
 import Services from "./components/Services/Services";
 import OurProcess from "./components/OurProccess/OurProcess";
 import Portfolio from "./components/Portfolio/Portfolio";
+import HeroSlider from "./components/HeroSlider/HeroSlider";
 
 
 export default function Home() {
   return (
   <main>
+     <HeroSlider/>
      <ImageWithText
       title={"Professional Clipping Path and Photoshop Services at Their Best"}
       subtitle={" High-Quality Clipping Path and Photoshop Services for Stunning Visuals."}
