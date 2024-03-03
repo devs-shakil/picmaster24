@@ -24,14 +24,14 @@ export default function HeroSlider(){
                 <Slider {...settings}>
                     {
                     heroSliderImg.map((image) =>(
-                        <div key={image.id} className="w-full h-[650px] max-w-full">
+                        <div key={image.id} className="w-full h-auto max-w-full max-h-[600px]">
                             <Image
                                 src={image.image}
                                 alt={image.alt}
                                 loading="lazy"
                                 width={1900}
                                 height={650} 
-                                className="h-full w-full object-cover no-repeat"
+                                className=" w-full object-contain no-repeat max-w-full h-auto"
                                 
                             />
                            

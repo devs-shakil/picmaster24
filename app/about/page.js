@@ -29,7 +29,7 @@ export default function about() {
               buttonTwo=""
               bgWhite={true}
           />
-          <Testimonial/>
+          {/* <Testimonial/> */}
         </>
       
     )

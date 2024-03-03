@@ -53,14 +53,7 @@ export default function Navbar() {
                             Porfolio
                         </Link>
                     </li>
-                    <li>
-                        <Link 
-                        className={`py-4  px-3 inline-flex ${pathname === '/pricing' ?  'active' : ''} `} 
-                        href="/pricing">
-                            Pricing
-                        </Link>
-                    </li>
-                    
+                   
                     <li>
                          <Link 
                             className={`py-4 px-3  inline-flex ${pathname === '/contact' ?  'active' : ''}`}
@@ -106,15 +99,6 @@ export default function Navbar() {
                 >
                     <span>< IoBookmarksSharp /></span>
                     <span>Portfolio</span>
-                </Link>
-            </li>
-            <li className="">
-                <Link
-                     href="/pricing"
-                     className="flex flex-col items-center justify-center px-2  py-2 gap-1"
-                >
-                    <span>< RiMoneyDollarBoxFill /></span>
-                    <span>Pricing</span>
                 </Link>
             </li>
            

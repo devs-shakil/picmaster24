@@ -6,7 +6,12 @@ export const heroSliderImg =[
     },
     {
         id:2,
-        image:'/images/hero-two.jpg',
+        image:'/images/hero-two.webp',
+        alt:''
+    },
+    {
+        id:2,
+        image:'/images/hero-three.webp',
         alt:''
     }
 ]
