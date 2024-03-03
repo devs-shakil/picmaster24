@@ -1,48 +1,13 @@
 "use client"
 import React, { useEffect , useState} from 'react'
-import 'keen-slider/keen-slider.min.css'
-import { useKeenSlider } from 'keen-slider/react' 
+// import 'keen-slider/keen-slider.min.css'
+// import { useKeenSlider } from 'keen-slider/react' 
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 import { IoIosStar } from "react-icons/io";
 import {testimonialItems} from './../../data/testimonial'
 
 export default function Testimonial() {
-  const [sliderRef] = useKeenSlider(
-    {
-      loop: true,
-      perView : 3
-    },
-    [
-      (slider) => {
-        let timeout
-        let mouseOver = false
-        function clearNextTimeout() {
-          clearTimeout(timeout)
-        }
-        function nextTimeout() {
-          clearTimeout(timeout)
-          if (mouseOver) return
-          timeout = setTimeout(() => {
-            slider.next()
-          }, 3000)
-        }
-        slider.on("created", () => {
-          slider.container.addEventListener("mouseover", () => {
-            mouseOver = true
-            clearNextTimeout()
-          })
-          slider.container.addEventListener("mouseout", () => {
-            mouseOver = false
-            nextTimeout()
-          })
-          nextTimeout()
-        })
-        slider.on("dragStarted", clearNextTimeout)
-        slider.on("animationEnded", nextTimeout)
-        slider.on("updated", nextTimeout)
-      },
-    ]
-  )
+  
 
     return (
        

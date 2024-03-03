@@ -40,7 +40,7 @@ const Portfolio = () => {
 
   return (
     <section className="section-spacing   py-10 px-5">
-      <h2 className="text-5xl text-center font-semibold mb-5">Portfolio</h2>
+      <h2 className="text-3xl md:text-5xl font-bold py-3 text-center">Portfolio</h2>
       <p className="text-center text-base w-full md:w-3/5 mx-auto">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe doloribus excepturi</p>
       <div className="mt-4">
@@ -80,7 +80,7 @@ const Portfolio = () => {
               <div className="">
                 <div className="portfolio-border">
                     <Image
-                      className="max-h-[318px] w-full object-cover scale-100 group-hover:scale-110 transition-scale object-top rounded-xl shadow-sm hover:shadow-md cursor-pointer hover:border-gray-100"
+                      className="ease-in-out delay-150 transition-all max-h-[318px] w-full object-cover scale-100 group-hover:scale-110 transition-scale object-top rounded-xl shadow-sm hover:shadow-md cursor-pointer hover:border-gray-100"
                       src={portfolioItem.imageUrl}
                       loading="lazy"
                       alt={portfolioItem.title}

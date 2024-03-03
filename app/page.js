@@ -2,14 +2,17 @@ import ImageWithText from "./components/ImageWithText/ImageWIthText";
 import image from './../public/images/header-right.png'
 import Services from "./components/Services/Services";
 import OurProcess from "./components/OurProccess/OurProcess";
+import Portfolio from "./components/Portfolio/Portfolio";
+import HeroSlider from "./components/HeroSlider/HeroSlider";
 
 
 export default function Home() {
   return (
   <main>
+     <HeroSlider/>
      <ImageWithText
-      title={"Perfect Clipping Path & Photoshop Services"}
-      subtitle={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus, risus sit amet auctor sodales, justo erat tempor eros"}
+      title={"Professional Clipping Path and Photoshop Services at Their Best"}
+      subtitle={" High-Quality Clipping Path and Photoshop Services for Stunning Visuals."}
       image={image}
       imageFirst = {false}
       buttonOne={"Get started"}
@@ -22,8 +25,9 @@ export default function Home() {
      />
      <OurProcess
       title={"Our Process"}
-      subtitle={"First Take the pictures by yourself ==> either with a camera or phone. Then you upload the pictures to us via we-transfer/ Dropbox or FTP server. We Process Your Photo according to your requirements. Finally, You Will receive the finished images from us, Ready within time."}
+      subtitle={"First Take the pictures by yourself  either with a camera or phone. Then you upload the pictures to us via we-transfer/ Dropbox or FTP server. We Process Your Photo according to your requirements. Finally, You Will receive the finished images from us, Ready within time."}
      />
+     <Portfolio/>
   </main>
     
   )

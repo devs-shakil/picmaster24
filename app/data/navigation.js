@@ -5,7 +5,6 @@ import { IoMail } from "react-icons/io5";
 export const navigationLinks = [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
-    { label: "Pricing", href: "/pricing" },
     { label: "Porfolio", href: "/portfolio" },
     { label: "Contact", href: "/contact" }
   ];
