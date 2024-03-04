@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { heroSliderImg } from "@/app/data/heroSlider";
 import Image from "next/image";
+import './heroSlider.css'
 
 export default function HeroSlider(){
     var settings = {
@@ -15,22 +16,22 @@ export default function HeroSlider(){
         adaptiveHeight: true,
         autoplay:true,
         autoplaySpeed:3000,
+        arrows:false,
 
        
   };
     return(
-        <>
-            <section>
+         <section className="overflow-hidden max-w-full">
                 <Slider {...settings}>
                     {
                     heroSliderImg.map((image) =>(
-                        <div key={image.id} className="w-full h-auto max-w-full max-h-[600px]">
+                        <div key={image.id} className="w-full h-full max-w-full max-h-[650px] -mb-4">
                             <Image
                                 src={image.image}
                                 alt={image.alt}
                                 loading="lazy"
                                 width={1900}
-                                height={650} 
+                                height={620} 
                                 className=" w-full object-contain no-repeat max-w-full h-auto"
                                 
                             />
@@ -39,7 +40,6 @@ export default function HeroSlider(){
                     ))
                     }
                 </Slider>
-            </section>
-        </>
+        </section>
     )
 }

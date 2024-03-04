@@ -31,7 +31,7 @@ export default function Services() {
                                     <div className="imageWrapper">
                                         <Image
                                             src={item.image.beforeImage}
-                                            className="slider-image image-before w-full h-auto rounded-t-lg services-wrapper"
+                                            className="slider-image image-before w-full h-auto services-wrapper"
                                             width='500'
                                             height="400"
                                             loading="lazy"
@@ -39,7 +39,7 @@ export default function Services() {
                                         />
                                         <Image
                                             src={item.image.afterImage}
-                                            className="slider-image w-full h-auto rounded-t-lg services-wrapper"
+                                            className="slider-image w-full h-auto  services-wrapper"
                                             width='500'
                                             height="400"
                                             loading="lazy"

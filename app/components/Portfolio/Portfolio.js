@@ -12,7 +12,7 @@ import ImageViewer from 'react-simple-image-viewer';
 
 
 
-const Portfolio = () => {
+const Portfolio = ({title,subtitle}) => {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const handleCategoryClick = (category) => {
@@ -40,9 +40,9 @@ const Portfolio = () => {
 
   return (
     <section className="section-spacing   py-10 px-5">
-      <h2 className="text-3xl md:text-5xl font-bold py-3 text-center">Portfolio</h2>
+      <h2 className="text-3xl md:text-5xl font-bold py-3 text-center">{title}</h2>
       <p className="text-center text-base w-full md:w-3/5 mx-auto">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe doloribus excepturi</p>
+        {subtitle}</p>
       <div className="mt-4">
         <ul className="flex items-center justify-center gap-2 md:gap-5 flex-wrap">
           <li className="">

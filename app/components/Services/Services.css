@@ -1,7 +1,6 @@
 .imageContainer{
     place-content: center;
     overflow: hidden;
-    border-radius: 1rem;
     --position: 50%;
 }
 .imageWrapper{
