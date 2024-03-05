@@ -77,7 +77,7 @@ export const portfolio  = [
     },
     {   
         id:5,
-        imageUrl:"",
+        imageUrl:"/images/path-5.webp",
         alt:"",
         category:{
             name:"Clipping Path",

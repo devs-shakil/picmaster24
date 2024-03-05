@@ -1,18 +1,18 @@
 export const servicesItems = [
   { 
     image:{
-      beforeImage:'/images/services1.jpg',
-      afterImage:'/images/services1.jpg'
+      beforeImage:'/images/cliping-path-before.jpg',
+      afterImage:'/images/clipinng-path-after.jpg'
     },
     title: "Clipping Path",
     subtitle: "In digital image process it generally becomes necessary to separate sure objects or elements of the..." ,
   },
   { 
     image: {
-      beforeImage:'/images/services2.jpg',
-      afterImage:'/images/services2.jpg'
+      beforeImage:'/images/color-correction-before.webp',
+      afterImage:'/images/color-correction-after.webp'
     },
-    title: "Color Correction & Editing",
+    title: "Increase Variations with Color Correction",
     subtitle: "Color adjustment service is occupied for changing a image color or matching the image color with..." ,
   },
   { 
