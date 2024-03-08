@@ -17,8 +17,8 @@ export const servicesItems = [
   },
   { 
     image: {
-      beforeImage:'/images/services3.jpg',
-      afterImage:'/images/services3.jpg'
+      beforeImage:'/images/gosting-before.jpg',
+      afterImage:'/images/gosting-after.jpg'
     },
     title: "Ghost Mannequin Effect",
     subtitle: "For various catalogs and e-commerce sites, mannequins are used instead of human figure to create 3D..." ,
@@ -33,18 +33,34 @@ export const servicesItems = [
   },
   {  
     image: {
-      beforeImage:'/images/services5.jpg',
-      afterImage:'/images/services5.jpg'
+      beforeImage:'/images/masking-before.jpg',
+      afterImage:'/images/masking-after.jpg'
     },
     title: "Image Masking Service",
     subtitle: "Image masking has many types of uses. Some advanced uses for background removal are discussed here...." ,
   },
   { 
     image: {
-      beforeImage:'/images/services6.jpg',
-      afterImage:'/images/services6.jpg'
+      beforeImage:'/images/shadow-before.jpg',
+      afterImage:'/images/shadow-after.jpg'
     },
     title: "Shadow & Mirror effects",
+    subtitle: "Drop shadow is very important in digital images for an authentic and fresh look. It is..." ,
+  },
+  { 
+    image: {
+      beforeImage:'/images/replication-before.jpg',
+      afterImage:'/images/replication-after.jpg'
+    },
+    title: "Replication",
+    subtitle: "Drop shadow is very important in digital images for an authentic and fresh look. It is..." ,
+  },
+  { 
+    image: {
+      beforeImage:'/images/retouching-before.jpg',
+      afterImage:'/images/retouching-after.jpg'
+    },
+    title: "Retouching",
     subtitle: "Drop shadow is very important in digital images for an authentic and fresh look. It is..." ,
   }
 ];
