@@ -7,19 +7,27 @@ import { RiMoneyDollarBoxFill } from "react-icons/ri";
 import { IoBookmarksSharp } from "react-icons/io5"
 import './navbar.css'
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function Navbar() {
     const pathname = usePathname();
     
     return (
-     <div className="navbar bg-primary  color-white  ">
-       <div className="flex justify-between container  uppercase w-full flex-col  md:flex-row px-5 ">
+     <div className="navbar shadow-lg">
+       <div className="items-center flex justify-between container  uppercase w-full flex-col  md:flex-row px-5 ">
             <div>
                 <Link
                     href="/"
-                    className="py-4 inline-flex font-bold "
+                    className="py-2 inline-flex font-bold "
                 >
-                    Picmaster24
+                   <Image
+                    src='/images/logo.png'
+                    width={200}
+                    height={100}
+                    loading="lazy"
+                    alt="Picmaster24 logo"
+                    className="max-w-[250px] max-h-[60px] object-contain w-full h-auto"
+                   />
                 </Link> 
             </div>
             <div>
@@ -117,3 +125,12 @@ export default function Navbar() {
     )
   }
   
+window.addEventListener('scroll', function() {
+    var navbar = document.querySelector('.stycky');
+    if (window.scrollY > 400) {
+      navbar.classList.add('scrolled');
+      console.log("calssadded")
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });

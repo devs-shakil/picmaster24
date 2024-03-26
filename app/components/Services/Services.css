@@ -16,7 +16,7 @@
     position: absolute;
     inset: 0;
     width: var(--position);
-    filter: grayscale(100%)
+   
 }
 .slider {
     position: absolute;
