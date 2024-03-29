@@ -7,6 +7,7 @@ import { heroSliderImg } from "@/app/data/heroSlider";
 import Image from "next/image";
 import './heroSlider.css'
 
+
 export default function HeroSlider(){
     var settings = {
         dots: true,
@@ -15,24 +16,25 @@ export default function HeroSlider(){
         slidesToShow: 1,
         adaptiveHeight: true,
         autoplay:true,
-        autoplaySpeed:3000,
+        autoplaySpeed:2000,
         arrows:false,
+        fade:true
 
        
   };
     return(
-         <section className="overflow-hidden max-w-full">
-                <Slider {...settings}>
+         <section className="hero-section-slider">
+              <Slider {...settings}>
                     {
                     heroSliderImg.map((image) =>(
-                        <div key={image.id} className="w-full h-full max-w-full max-h-[650px] -mb-4">
+                        <div key={image.id} className="hero-slide max-h-[700px]">
                             <Image
                                 src={image.image}
                                 alt={image.alt}
                                 loading="lazy"
                                 width={1900}
-                                height={620} 
-                                className=" w-full object-contain no-repeat max-w-full h-auto"
+                                height={600} 
+                                className="w-full h-full object-contain max-h-[600px]"
                                 
                             />
                            

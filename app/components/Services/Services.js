@@ -35,7 +35,7 @@ export default function Services() {
                                             width='500'
                                             height="400"
                                             loading="lazy"
-                                            alt=""
+                                            alt="picmaster24 services"
                                         />
                                         <Image
                                             src={item.image.afterImage}
@@ -43,7 +43,7 @@ export default function Services() {
                                             width='500'
                                             height="400"
                                             loading="lazy"
-                                            alt=""
+                                            alt="picmaster24 services"
                                         />
                                         <input
                                             type="range"
