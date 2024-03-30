@@ -14,14 +14,14 @@ export default function Navbar() {
     const pathname = usePathname();
     const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 400) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
+    useEffect(() => {
+        const handleScroll = () => {
+        if (window.scrollY > 400) {
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
+        };
 
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -90,7 +90,7 @@ export default function Navbar() {
                     </ul>
                 </div>
         </div>
-        <ul className="flex  md:hidden fixed bottom-0 right-0 left-0 bg-secondary color-white  text-[10px] px-5 items-center justify-center gap-1">
+        <ul className="flex  md:hidden fixed bottom-0 right-0 left-0 bg-secondary color-white  text-[10px] px-5 items-center justify-center gap-1 z-50">
                 <li className="">
                     <Link
                         href="/"
@@ -143,9 +143,3 @@ export default function Navbar() {
     )
   }
   
-//  var navbar = document.querySelector('.stycky');
-//     if (window.scrollY > 400) {
-//         navbar.classList.add('scrolled');
-//     } else {
-//         navbar.classList.remove('scrolled');
-// }
