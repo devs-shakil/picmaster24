@@ -27,7 +27,7 @@ export default function HeroSlider(){
               <Slider {...settings}>
                     {
                     heroSliderImg.map((image) =>(
-                        <div key={image.id} className="hero-slide max-h-[700px]">
+                        <div key={image.id} className={`hero-slide max-h-[700px] ${image.id == 2 ? 'gray-color' : ''}`}>
                             <Image
                                 src={image.image}
                                 alt={image.alt}

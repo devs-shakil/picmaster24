@@ -30,8 +30,8 @@ export default function Navbar() {
   }, []);
     
     return (
-    <nav className={scrolled ? 'stycky scrolled' : 'stycky'}>
-        <div className="navbar shadow-lg">
+    <nav className={scrolled ? 'stycky scrolled shadow-md' : 'stycky'}>
+        <div className="navbar ">
         <div className="items-center flex justify-between container  uppercase w-full flex-col  md:flex-row px-5 ">
                 <div>
                     <Link

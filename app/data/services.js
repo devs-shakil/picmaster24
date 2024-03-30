@@ -60,7 +60,7 @@ export const servicesItems = [
       beforeImage:'/images/retouching-before.jpg',
       afterImage:'/images/retouching-after.jpg'
     },
-    title: "Retouching",
-    subtitle: "Drop shadow is very important in digital images for an authentic and fresh look. It is..." ,
+    title: "professional photo retouching ",
+    subtitle: "Our professional photo retouching service offers complete product photo editing where we aim to produce stunning finishes to product photos. We save your time and reduce costs in the process for your Online Store- eBay AMAZON etc. You can try two images Free-Trial with us. The service includes" ,
   }
 ];
