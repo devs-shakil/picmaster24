@@ -1,0 +1,15 @@
+.slick-dots li button::before{
+    font-size: 12px;
+}
+.slick-dots{
+    bottom: 10px;
+}
+
+@media screen and (max-width:768px){
+    .slick-dots {
+        bottom:0px;
+    }
+}
+.gray-color{
+    background-color: #C4C3C6;
+}

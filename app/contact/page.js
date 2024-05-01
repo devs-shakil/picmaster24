@@ -7,24 +7,7 @@ import Link from "next/link";
 import {socialIcon, contactUs } from '../data/navigation'
 
 export default function contact() {
-  const test = "re_Spo8btjZ_KLAAwQCcUvbHW6MwMwrhEYVa"
-      async function create(formData) {
-       
-        await fetch("https://api.resend.com/emails", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${test}`,
-          },
-          body: JSON.stringify({
-            from: "shakil.info82@gmail.com",
-            to: "devs.shakil@gmail.com",
-            subject: formData.get("subject"),
-            text: "This works!",
-          }),
-        });
-        console.log("Email sent!");
-      }
+  
     return (
     
         <section className="bg-gray-50">

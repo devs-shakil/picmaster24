@@ -17,9 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className='sticky top-0 right-0 left-0 z-50 max-w-full overflow-x-hidden'>
-            <Navbar/>
-        </header>
+         <Navbar/>
         {children}
         <CallToAction/>
         <footer className='max-w-full overflow-x-hidden'>
