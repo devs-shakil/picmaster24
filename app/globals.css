@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color:#021333;
+  --secondary-color:#DF283A;
+  --white:#F9F9F9;
+  --black:#000000;
+}
+
+.container{
+    max-width:1440px !important;
+    margin-inline:auto;
+}
+.bg-primary{
+  background-color: var(--primary-color)
+}
+.bg-secondary{
+  background-color: var(--secondary-color)
+}
+.white-bg{
+  background-color: var(--white);
+}
+.black-bg{
+  background-color: var(--black);
+}
+.color-white{
+  color:var(--white)
+}
+.color-primary{
+  color:var(--primary-color)
+}
+.color-secondary{
+  color: var(--secondary-color)
+}
+.color-black{
+  color: var(--black);
+}
+
+.hover-primary:hover{
+  background-color:var(--primary-color);
+  color: var(--white);
+}
+.hover-secondary:hover{
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+.whatsappLink svg{
+  width:60px;
+  font-size:60px;
+  color:#0FABF1;
+  
+}
+.whatsappLink {
+  /*box-shadow: 0 0 0 20px rgba(229,62,62, 0.5);
+  transform: scale(0.8);*/
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(0.8);
+      box-shadow: 0 0 0 0 rgba(229, 62, 62, 1);
+  }
+
+  70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 60px rgba(229, 62, 62, 0);
+  }
+
+  100% {
+      transform: scale(0.8);
+  }
+}
+

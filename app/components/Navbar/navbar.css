@@ -1,0 +1,24 @@
+.navbar ul li a span svg{
+    width:20px;
+    height:20px;
+}
+@media screen and (max-width:768px){
+    .navbar{
+        background-color: #DF283A;
+    }
+}
+.active{
+    border-bottom:2px solid #DF283A;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.scrolled{
+    position: sticky;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 999;
+    max-width: 100%;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in;
+    background-color:rgb(235, 235, 235);
+}
