@@ -80,12 +80,12 @@ const Portfolio = ({title,subtitle}) => {
               <div className="">
                 <div className="portfolio-border">
                     <Image
-                      className="ease-in-out delay-150 transition-all max-h-[318px] w-full object-cover scale-100 group-hover:scale-110 transition-scale object-top rounded-xl shadow-sm hover:shadow-md cursor-pointer hover:border-gray-100"
+                      className="ease-in-out delay-150 transition-all max-h-[400px] w-full object-contain scale-100 group-hover:scale-110 transition-scale object-center rounded-xl shadow-sm hover:shadow-md cursor-pointer hover:border-gray-100"
                       src={portfolioItem.imageUrl}
                       loading="lazy"
                       alt={portfolioItem.title}
-                      width="420"
-                      height="318"
+                      width="500"
+                      height="500"
                       onClick={ () => openImageViewer(index) }
                     />
                 </div>

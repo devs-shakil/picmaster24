@@ -26,7 +26,7 @@ export const categories = [
     },
      {
         id:8,
-        title:"Photo Editing"
+        title:"Neck Joint"
     },
     {
         id:9,
@@ -110,7 +110,98 @@ export const portfolio  = [
             name:"Images Masking",
             slug:"images-masking"
         }
-    }
+    },
+    {   
+        id:9,
+        imageUrl:"/images/Portfolio/bg-remove/bg-remove-1.jpg",
+        alt:"",
+        category:{
+            name:"Background Remove",
+            slug:"bg-remove"
+        }
+    },
+    {   
+        id:10,
+        imageUrl:"/images/Portfolio/bg-remove/bg-remove-2.jpg",
+        alt:"",
+        category:{
+            name:"Background Remove",
+            slug:"bg-remove"
+        }
+    },
+    {   
+        id:11,
+        imageUrl:"/images/Portfolio/bg-remove/bg-remove-3.jpg",
+        alt:"",
+        category:{
+            name:"Background Remove",
+            slug:"bg-remove"
+        }
+    },
+    {   
+        id:12,
+        imageUrl:"/images/Portfolio/bg-remove/bg-remove-4.jpg",
+        alt:"",
+        category:{
+            name:"Background Remove",
+            slug:"bg-remove"
+        }
+    },
+    {   
+        id:13,
+        imageUrl:"/images/Portfolio/bg-remove/bg-remove-5.jpg",
+        alt:"",
+        category:{
+            name:"Background Remove",
+            slug:"bg-remove"
+        }
+    },
+    {   
+        id:14,
+        imageUrl:"/images/Portfolio/bg-remove/bg-remove-6.jpg",
+        alt:"",
+        category:{
+            name:"Background Remove",
+            slug:"bg-remove"
+        }
+    },
+    {   
+        id:15,
+        imageUrl:"/images/Portfolio/shadow/shadow-1.jpg",
+        alt:"",
+        category:{
+            name:"Shadow & Mirror effects",
+            slug:"shadow-and-mirror"
+        }
+    },
+    {   
+        id:16,
+        imageUrl:"/images/Portfolio/shadow/shadow-2.jpg",
+        alt:"",
+        category:{
+            name:"Shadow & Mirror effects",
+            slug:"shadow-and-mirror"
+        }
+    },
+    {   
+        id:17,
+        imageUrl:"/images/Portfolio/neck-joint/neck-1.jpg",
+        alt:"",
+        category:{
+            name:"Neck Joint",
+            slug:"neck-joint"
+        }
+    },
+    {   
+        id:18,
+        imageUrl:"/images/Portfolio/neck-joint/neck-2.jpg",
+        alt:"",
+        category:{
+            name:"Neck Joint",
+            slug:"neck-joint"
+        }
+    },
+
 ]
 
 export const imgLightBoxSrc=[
@@ -120,5 +211,15 @@ export const imgLightBoxSrc=[
     '/images/path-4.webp',
     '/images/mask/1.jpg',
     '/images/mask/2.jpg',
-    '/images/mask/3.jpg'
+    '/images/mask/3.jpg',
+    'images/Portfolio/bg-remove/bg-remove-1.jpg',
+    'images/Portfolio/bg-remove/bg-remove-2.jpg',
+    'images/Portfolio/bg-remove/bg-remove-3.jpg',
+    'images/Portfolio/bg-remove/bg-remove-4.jpg',
+    'images/Portfolio/bg-remove/bg-remove-5.jpg',
+    'images/Portfolio/bg-remove/bg-remove-6.jpg',
+    '/images/Portfolio/shadow/shadow-1.jpg',
+    '/images/Portfolio/shadow/shadow-2.jpg',
+    '/images/Portfolio/neck-joint/neck-1.jpg',
+    '/images/Portfolio/neck-joint/neck-2.jpg'
 ]
